@@ -1,5 +1,5 @@
 {
-  "name": "static-cli",
+  "name": "sttc-cli",
   "version": "0.0.1",
   "description": "A CLI for deploying static websites",
   "author": "Henry Kirkness",
@@ -8,7 +8,8 @@
     "static": "./lib/index.js"
   },
   "scripts": {
-    "watch": "yarn run babel src/ -- -d lib/ --watch"
+    "watch": "yarn run babel src/ -- -d lib/ --watch",
+    "prepublishOnly": "yarn run babel src/ -- -d lib/"
   },
   "dependencies": {
     "aws-sdk": "2.202.0",
