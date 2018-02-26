@@ -1,5 +1,5 @@
 {
-  "name": "static",
+  "name": "static-cli",
   "version": "0.0.1",
   "description": "A CLI for deploying static websites",
   "author": "Henry Kirkness",
