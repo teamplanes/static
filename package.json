@@ -1,6 +1,6 @@
 {
-  "name": "sttc-cli",
-  "version": "0.0.1",
+  "name": "sttc",
+  "version": "0.0.1-rc.4",
   "description": "A CLI for deploying static websites",
   "author": "Henry Kirkness",
   "license": "MIT",
@@ -8,8 +8,8 @@
     "static": "./lib/index.js"
   },
   "scripts": {
-    "watch": "yarn run babel src/ -- -d lib/ --watch",
-    "prepublishOnly": "yarn run babel src/ -- -d lib/"
+    "watch": "yarn run babel src/ -d lib/ --watch",
+    "prepublishOnly": "yarn run babel src/ -d lib/"
   },
   "dependencies": {
     "aws-sdk": "2.202.0",
@@ -19,13 +19,13 @@
     "ora": "2.0.0",
     "prettyjson": "1.2.1",
     "random-word": "2.0.0",
-    "yargs": "11.0.0"
+    "yargs": "11.0.0",
+    "babel-plugin-transform-runtime": "6.23.0"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
     "babel-eslint": "8.2.2",
     "babel-plugin-transform-object-rest-spread": "6.26.0",
-    "babel-plugin-transform-runtime": "6.23.0",
     "babel-preset-env": "1.6.1",
     "babel-preset-flow": "6.23.0",
     "eslint": "4.18.1",
@@ -36,5 +36,6 @@
     "eslint-plugin-prettier": "2.6.0",
     "flow-bin": "0.66.0",
     "prettier": "1.10.2"
-  }
+  },
+  "files": ["lib"]
 }
