@@ -11,7 +11,7 @@ $ static ./ domain.com
 ### Install
 
 ```sh
-$ npm i -g sttc-cli
+$ npm i -g sttc
 ```
 
 ### Features
