@@ -53,3 +53,7 @@ $ mv build/index.html build/200.html
 <!-- Deploy 🚀 -->
 $ static ./build my-domain.com
 ```
+
+### TODO
+* If a distribution already exists validate that the config is going to be compatible with Static
+  * NOTE: Default Root Object is something to look out for, for example it will commonly be index.html but Static needs it to be index
