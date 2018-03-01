@@ -87,7 +87,7 @@ export default async (
 
   const region = await getBucketRegion(bucket);
   const siteBaseDir = path.resolve(process.cwd(), directory);
-  uploadDirectoryContents(bucket, siteBaseDir, folderContents);
+  await uploadDirectoryContents(bucket, siteBaseDir, folderContents);
 
   return {
     name: bucket,
