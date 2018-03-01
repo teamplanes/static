@@ -52,6 +52,7 @@ const uploadDirectoryContents = async (
           siteBaseDir,
         );
       }
+      const mimeType = mime.lookup(filePath);
 
       // If its not a directory, upload.
       const params = {
@@ -62,7 +63,7 @@ const uploadDirectoryContents = async (
           mime.lookup(filePath) === 'text/html'
             ? fp.replace('.html', '', fileKey)
             : fileKey,
-        ContentType: mime.lookup(filePath),
+        ContentType: mimeType || 'text/plain',
       };
       return sdk.s3.putObject(params).promise();
     }),
