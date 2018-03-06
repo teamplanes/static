@@ -64,6 +64,7 @@ const uploadDirectoryContents = async (
             ? fp.replace('.html', '', fileKey)
             : fileKey,
         ContentType: mimeType || 'text/plain',
+        CacheControl: 'max-age=315360000',
       };
       return sdk.s3.putObject(params).promise();
     }),

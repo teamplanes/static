@@ -1,6 +1,6 @@
 {
   "name": "sttc",
-  "version": "0.0.1-rc.5",
+  "version": "0.0.1-rc.6",
   "description": "A CLI for deploying static websites",
   "author": "Henry Kirkness",
   "license": "MIT",
@@ -37,7 +37,5 @@
     "flow-bin": "0.66.0",
     "prettier": "1.10.2"
   },
-  "files": [
-    "lib"
-  ]
+  "files": ["lib"]
 }
