@@ -36,26 +36,28 @@ $ npm i -g sttc
 **tldr;** To handle routing client-side simply rename your index.html file to 200.html. All unknown requests will now return this file.
 
 ```sh
-<!-- Example: with create-react-app -->
+# Example: with create-react-app
 $ create-react-app my-app
 
-<!-- Move into the root of your new React app -->
+# Move into the root of your new React app
 $ cd my-app
 
-<!-- ...do some work on your app... -->
+# ...do some work on your app...
 
-<!-- Build you app -->
+# Build you app
 $ npm run build
 
-<!-- 🔑Rename your index.html file to 200.html -->
+# 🔑Rename your index.html file to 200.html
 $ mv build/index.html build/200.html
 
-<!-- Deploy 🚀 -->
+# Deploy 🚀
 $ static ./build my-domain.com
 ```
 
 ### TODO
 
-* If a distribution already exists validate that the config is going to be compatible with Static
+[ ] If a distribution already exists validate that the config is going to be compatible with Static
   * NOTE: Default Root Object is something to look out for, for example it will commonly be index.html but Static needs it to be index
-* Needs to set "Compress Objects Automatically" to true
+[ ] Needs to set "Compress Objects Automatically" to true
+[ ] Add a tag to deployments to highlight that its deployed by Static
+[ ] Add command to list all deployments by Static
