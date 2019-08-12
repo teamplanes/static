@@ -1,6 +1,6 @@
 {
   "name": "sttc",
-  "version": "0.0.1-rc.6",
+  "version": "0.0.2",
   "description": "A CLI for deploying static websites",
   "author": "Henry Kirkness",
   "license": "MIT",
