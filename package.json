@@ -4,6 +4,9 @@
   "description": "A CLI for deploying static websites",
   "author": "Henry Kirkness",
   "license": "MIT",
+  "repository": {
+    "url": "https://github.com/teamplanes/static.git"
+  },
   "bin": {
     "static": "./lib/index.js"
   },
