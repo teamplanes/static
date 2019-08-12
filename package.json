@@ -23,7 +23,7 @@
     "ora": "2.0.0",
     "prettyjson": "1.2.1",
     "random-word": "2.0.0",
-    "yargs": "11.0.0"
+    "yargs": "^13.3.0"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
